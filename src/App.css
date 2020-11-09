@@ -1,0 +1,10 @@
+
+.News{
+  background-color: #ecf0f1;
+  border: #bdc3c7;
+  padding: 10px;
+}
+.News p {
+  color:  #ecf0f1;
+  background: #34495e ;
+}
