@@ -1,5 +1,5 @@
 import React from 'react';
-import News from './articles/conteiners/News';
+import News from './pages/News';
 import './App.css';
 
 const DAY = 'monday';
