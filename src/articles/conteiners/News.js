@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import Author from './Author';
-import Scoring from './Scoring';
+
+import Author from '../components/Author';
+import Scoring from '../components/Scoring';
 
 function News({header, intro, author}) {
     const [score] = useState(5);

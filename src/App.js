@@ -1,5 +1,5 @@
 import React from 'react';
-import News from './components/News';
+import News from './articles/conteiners/News';
 import './App.css';
 
 const DAY = 'monday';
@@ -15,6 +15,7 @@ const data = [
   { id: 2, author: 'Jan Brzęczek', title: 'Wszyscy zazdroszą Polakom!', intro: 'Takiego clickbajtowego tytułu jeszcze nikt nie wymyślił'},
   { id: 3, author: 'Jan Brzęczek', title: 'Adam Małysz Zgolił wąs',
     intro: 'Po przegranym zakładzie z Piotrem Żyłą nasz mistrz olimpijski zgolił wąsy'
+     
   }
 ]
 
