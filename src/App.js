@@ -1,5 +1,8 @@
 import React from 'react';
 import News from './pages/News';
+import Header from './components/Header';
+//import {Logo, NavLink} from './components/Header';
+
 import './App.css';
 
 const DAY = 'monday';
@@ -22,6 +25,7 @@ const data = [
 function App() {
   return (
 <div>
+  <Header />
   {data.map((elem) =>(
   <News 
   key ={`news-${elem.id}`} 
