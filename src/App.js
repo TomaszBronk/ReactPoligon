@@ -4,6 +4,7 @@ import Header from './components/Header';
 //import {Logo, NavLink} from './components/Header';
 
 import './App.css';
+import Form from './pages/Form';
 
 const DAY = 'monday';
 
@@ -20,12 +21,13 @@ const data = [
     intro: 'Po przegranym zakładzie z Piotrem Żyłą nasz mistrz olimpijski zgolił wąsy'
      
   }
-]
+];
 
 function App() {
   return (
 <div>
   <Header />
+  <Form />
   {data.map((elem) =>(
   <News 
   key ={`news-${elem.id}`} 
