@@ -3,7 +3,9 @@ import React from 'react';
 //element klasowy
 class Form extends React.Component {
     state = {
-        name:''
+        name:'',
+        surname:'',
+        age:''
     }
     // bind przypisanie this. setSate
     // pierwsza metoda 
@@ -26,15 +28,26 @@ class Form extends React.Component {
     handleChange = (event) => {
         //event.target.value
         console.log('input value: ', event.target.value);
-        this.setState({name: event.target.value});
+        const keyName = event.target.name;
+        this.setState({ [keyName]: event.target.value});
+
+        //this.setState({name: event.target.value});
         //interpreter js nie wie jaki jest kontekst
         //setState undefinded
     }
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>  
-                <input type="text" onChange={this.handleChange}/>
-                <button onClick={this.handleClick}>React Button</button>
+            <form onSubmit={this.handleSubmit}>
+            <div>
+                <input type="text" name='name' placeholder='Name' onChange={this.handleChange}/>
+            </div>  
+            <div>
+                <input type="text" name='surname' placeholder='Surname' onChange={this.handleChange}/>
+            </div>
+            <div>
+                <input type="text" name='age' placeholder='Age' onChange={this.handleChange}/>
+            </div>
+                <button type='submit' onClick={this.handleClick}>React Button</button>
             </form>
         );
     }
